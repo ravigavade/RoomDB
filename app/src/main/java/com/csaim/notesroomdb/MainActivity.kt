@@ -15,6 +15,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.room.Room
+import com.csaim.notesroomdb.ui.screens.MainScreen
 import com.csaim.notesroomdb.ui.theme.NotesRoomDBTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,11 +23,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            NotesRoomDBTheme {
-
-
-
-            }
+            MainScreen()
         }
     }
 }
